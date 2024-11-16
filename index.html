@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+
+
+    <form action="#" target="_blank" autocomplete="on" id="form1" >
+
+      <fieldset style="border: 2px solid black">
+
+        <legend>
+          <strong> <i> Name and Address </i> </strong>
+        </legend>
+
+        <!-- Q1 -->
+
+        <label for="rd1">Do you use CiviCRM?</label>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+
+        <input type="radio" name="CiviCRM" id="rd1" />
+        <label for="rd1">Yes</label>
+
+        <input type="radio" name="CiviCRM" id="rd2" />
+        <label for="rd2">No</label>
+
+        <br/>
+        <br/>
+
+        <!-- Q2 -->
+
+        <label for="q2">How long have you been using CiviCRM? </label>
+
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+
+        <input type="number" name="CiviCRM_time" placeholder="  e.g 1 or 2 (years)"min="0" id="q2"/>
+
+        <br />
+        <br />
+
+        <!-- Q3 -->
+
+        <label for="q3">Which CMS do you use? </label>
+
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+
+        <select name="CMS_type" id="q3">
+          <option value="WordPress ">WordPress</option>
+          <option value="Drupal ">Drupal</option>
+          <option value="Joomla ">Joomla</option>
+          <option value="Shopify ">Shopify</option>
+          <option value="Ghost ">Ghost</option>
+        </select>
+
+        <br />
+        <br />
+
+        <!-- Q4 -->
+        <label for="q4">Your skill set?</label>
+
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+
+        <select name="skillset" id="q4">
+          <option value="HTML ">HTML</option>
+          <option value="CSS ">CSS</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Database Management">Database Management</option>
+          <option value="API Integration">API Integration</option>
+        </select>
+
+        <br />
+        <br />
+
+        <!-- email *-->
+
+        
+
+        <legend>  <strong> <i>  Personal Data :</i> </strong> </legend>
+        
+          <br>
+
+
+        <label for="em">Email * : </label>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+
+
+        <input type="email" id="em" name="Email" required placeholder="  abc@email.com " />
+
+        <br />
+        <br />
+
+        <!-- first name *-->
+
+        <label for="fname">First Name * : </label>
+
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+
+        <input type="text" id="fname" name="First_Name" required placeholder="  e.g  Jhon" />
+
+        <br />
+        <br />
+
+        <!-- last name * -->
+
+        <label for="lname">Last Name * : </label>
+
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+
+        <input type="text" id="lname" name="Last_Name" required placeholder="  e.g  wick " />
+
+        <br />
+        
+        <!-- Note -->
+
+         <p> &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <i> <b> * First and  Last name will be shared with other visitors on site * </b> </i> </p>
+
+       
+    
+         <!-- Street Address -->
+        
+         <legend>  <strong> <i>  Address :</i> </strong> </legend>
+        
+          <br>
+
+         <label for="st">Street Address (Home) : </label>
+
+         &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+         <input id="st" type="text" name="Street_Address" placeholder=" House K, rehmanabad, etc " >
+        
+         <br>
+         <br>
+
+        <!-- City -->
+
+        <label for="ct">City (Home) : </label>
+
+        &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+
+        <input id="ct" type="text" name="city" placeholder=" e.g Islamabad" >
+
+        <br>
+        <br>
+
+        <!-- Postal Code -->
+
+        <label for="pc">Postal Code (Home) : </label>
+
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input id="pc" type="number" min="0" name="city" placeholder=" e.g 88238" >
+
+        <br>
+        <br>
+
+        <!-- Country (Home) -->
+        <label for="cc">Country (Home) : </label>
+
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input id="cc" type="text" name="Country" placeholder=" e.g Pakistan" >
+
+            <!-- Note -->
+
+         <p> &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <i> <b> *Your state/Province and Country of residence will be shared with other so folks can find<br> &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;   others in thier community  * </b> </i> </p>
+
+
+         <!-- State (Home) -->
+         <label for="ss">State (Home) : </label>
+
+         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+         <input id="ss" type="text" name="State" placeholder=" e.g Punjab" >
+        
+
+      </fieldset>
+    </form>
+
+    <!-- Buttons -->
+    <br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <!-- Submit Button  -->
+
+    <input type="submit" form="form1" >
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <!-- Reset Button  -->
+
+    <input type="reset"  form="form1" >
+  </body>
+</html>
