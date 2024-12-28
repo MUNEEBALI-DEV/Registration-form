@@ -8,7 +8,7 @@
   <body>
 
     <h1 style="text-align: center;" >Registration Form</h1>
-    <form action="#" target="_blank" autocomplete="on" id="form1" >
+    <form action="submitted.html" target="_blank" autocomplete="on" id="form1" >
 
       <fieldset style="border: 2px solid black">
 
@@ -22,11 +22,15 @@
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 
-        <input type="radio" name="CiviCRM" id="rd1" />
+        <input type="radio" name="CiviCRM" id="rd1" required />
         <label for="rd1">Yes</label>
 
-        <input type="radio" name="CiviCRM" id="rd2" />
+        <input type="radio" name="CiviCRM" id="rd2" required />
         <label for="rd2">No</label>
+
+
+        <input type="radio" name="CiviCRM" id="rd3" />
+        <label for="rd3">Unselect</label>
 
         <br/>
         <br/>
@@ -37,7 +41,7 @@
 
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
 
-        <input type="number" name="CiviCRM_time" placeholder="  e.g 1 or 2 (years)"min="0" id="q2"/>
+        <input type="text" name="CiviCRM_time" placeholder="  e.g 1 or 2 (years)"min="0" id="q2"  required />
 
         <br />
         <br />
@@ -48,7 +52,7 @@
 
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
 
-        <select name="CMS_type" id="q3">
+        <select name="CMS_type" id="q3" required >
           <option value="WordPress ">WordPress</option>
           <option value="Drupal ">Drupal</option>
           <option value="Joomla ">Joomla</option>
@@ -64,7 +68,7 @@
 
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 
-        <select name="skillset" id="q4">
+        <select name="skillset" id="q4" required >
           <option value="HTML ">HTML</option>
           <option value="CSS ">CSS</option>
           <option value="JavaScript">JavaScript</option>
@@ -84,7 +88,7 @@
           <br>
 
 
-        <label for="em">Email * : </label>
+        <label for="em">Email : </label>
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 
 
@@ -95,7 +99,7 @@
 
         <!-- first name *-->
 
-        <label for="fname">First Name * : </label>
+        <label for="fname">First Name : </label>
 
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 
@@ -106,7 +110,7 @@
 
         <!-- last name * -->
 
-        <label for="lname">Last Name * : </label>
+        <label for="lname">Last Name : </label>
 
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 
@@ -130,7 +134,7 @@
 
          &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-         <input id="st" type="text" name="Street_Address" placeholder=" House K, rehmanabad, etc " >
+         <input id="st" type="text" name="Street_Address" placeholder=" House K, rehmanabad, etc " required >
         
          <br>
          <br>
@@ -141,7 +145,7 @@
 
         &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 
-        <input id="ct" type="text" name="city" placeholder=" e.g Islamabad" >
+        <input id="ct" type="text" name="city" placeholder=" e.g Islamabad" required >
 
         <br>
         <br>
@@ -152,7 +156,7 @@
 
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-        <input id="pc" type="number" min="0" name="city" placeholder=" e.g 88238" >
+        <input id="pc" type="number" min="0" name="city" placeholder=" e.g 88238" required>
 
         <br>
         <br>
@@ -162,7 +166,13 @@
 
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-        <input id="cc" type="text" name="Country" placeholder=" e.g Pakistan" >
+        <select name="countryType" id="ctry" required >
+          <option value="Pakistan ">Pakistan</option>
+          <option value="India ">India</option>
+          <option value="Bangladesh ">Bangladesh</option>
+          <option value="China ">China</option>
+          <option value="Saudi Araiba ">Saudi Araiba</option>
+        </select>
 
             <!-- Note -->
 
@@ -174,7 +184,7 @@
 
          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  
-         <input id="ss" type="text" name="State" placeholder=" e.g Punjab" >
+         <input id="ss" type="text" name="State" placeholder=" e.g Punjab" required >
         
 
       </fieldset>
@@ -187,7 +197,7 @@
     
     <!-- Submit Button  -->
 
-    <input type="submit" form="form1" >
+    <input type="submit" form="form1"  >
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
